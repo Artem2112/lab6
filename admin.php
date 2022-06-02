@@ -26,8 +26,8 @@ if (empty($_SERVER['PHP_AUTH_USER']) || empty($_SERVER['PHP_AUTH_PW'])) {
 $usLogin = $_SERVER['PHP_AUTH_USER'];
 $usHash = $_SERVER['PHP_AUTH_PW'];
 
-$user = 'u47646';
-$pass = '1856207';
+$user = 'u48864';
+$pass = '1630236';
 $db = new PDO('mysql:host=localhost;dbname=u47646', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 
 $data = $db->query("SELECT * FROM adm WHERE login ='$usLogin' and hash ='$usHash'");
